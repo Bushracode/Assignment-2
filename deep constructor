@@ -1,0 +1,18 @@
+{
+    const char* students[] = {"laeeqa", "manan", "supugmy"};
+
+    Course course1("linear Algebra", students, 3);
+
+    Course course2 = course1;
+
+    cout << "Students in course1: ";
+    cout << course1.getStudents()[0] << " " << course1.getStudents()[1] << " " << course1.getStudents()[2] << std::endl;
+
+    course2.dropStudent("manan");
+
+    
+    cout << "Students in course2 after dropping manan: ";
+    cout << course2.getStudents()[0] << " " << course2.getStudents()[1] << std::endl;
+
+    return 0;
+}
